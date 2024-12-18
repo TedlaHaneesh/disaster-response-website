@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rescue.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+			width: 100%;
+			overflow-x: hidden;
+        }
+		.popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        /* Popup content container */
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Close button styling */
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Styling for each organization's box */
+        .organization {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Button to open the popup */
+        .open-popup-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+
+        h1, h2 {
+            color: #ad1216; /* Adjust color as needed */
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .additional-resources {
+            margin-top: 30px;
+        }
+
+        .additional-resources ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .additional-resources li {
+            margin-bottom: 5px;
+        }
+
+        .additional-resources a {
+            color: #085291;
+            text-decoration: none;
+        }
+
+        .additional-resources a:hover {
+            text-decoration: underline;
+        }
+		.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: -150px;
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.video p {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+}
+		
+    </style>
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">DISASTER<span>.</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="has-dropdown active" >
+								<a>Disasters</a>
+								<ul class="dropdown">
+									<li><a href="hurricanes.html">Hurricanes</a></li>
+									<li><a href="earthquakes.html">Earthquakes</a></li>
+									<li><a href="floods.html">Floods</a></li>
+									<li><a href="wildfires.html">Wildfires</a></li>
+									<li></li>
+								</ul>
+							</li>
+							<li><a href="safetytips.html">Build a kit</a></li>
+							<li><a href="feed.html">Feed</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="fh5co-heading">
+					<h2 style="font-weight: 800; font-size: 54px; margin-top: -90px;">Floods</h2>
+					<h2>Prepare for Floods</h2>
+
+
+<h3>1. General Flood Information:</h3>
+<h4>Floods Overview:</h4>
+<ul>
+    <li>Flooding is a temporary overflow of water onto normally dry land.</li>
+    <li>It is the most common disaster in the U.S. and can result from various factors, including rain, snow, coastal storms, and dam overflows.</li>
+    <li>Floods can cause outages, disrupt transportation, damage buildings, and trigger landslides.</li>
+</ul>
+
+<h3>2. Before a Flood:</h3>
+<h4>Know Your Risk:</h4>
+<ul>
+    <li>Visit FEMA's Flood Map Service Center to identify flood risks in your area.</li>
+    <li>Sign up for community warning systems and emergency alerts.</li>
+</ul>
+
+<h4>Purchase Flood Insurance:</h4>
+<ul>
+    <li>Homeowner’s insurance policies typically do not cover flood damage.</li>
+    <li>Purchase or renew flood insurance well before a disaster occurs, as policies usually take 30 days to become effective.</li>
+</ul>
+
+<h4>Prepare Your Home:</h4>
+<ul>
+    <li>Make an evacuation plan, including for pets, and practice evacuation routes and shelter plans.</li>
+    <li>Gather essential supplies like non-perishable food, water, and cleaning supplies for several days.</li>
+    <li>Protect important documents in waterproof containers and create digital copies.</li>
+    <li>Move valuables to higher levels and declutter drains and gutters.</li>
+    <li>Install check valves and consider using a sump pump with a battery backup.</li>
+</ul>
+
+<h3>3. During a Flood:</h3>
+<h4>Evacuation:</h4>
+<ul>
+    <li>Evacuate immediately if instructed, and never drive around barricades.</li>
+    <li>Avoid walking, swimming, or driving through floodwaters.</li>
+</ul>
+
+<h4>Safety Tips:</h4>
+<ul>
+    <li>Stay off bridges over fast-moving water.</li>
+    <li>If trapped in a car or building by rising water, move to the highest level or get on the roof and signal for help.</li>
+    <li>Listen to emergency alerts for updated information and instructions.</li>
+</ul>
+
+<h3>4. After a Flood:</h3>
+<h4>Return Safely:</h4>
+<ul>
+    <li>Return home only when authorities declare it safe.</li>
+    <li>Avoid driving except in emergencies.</li>
+</ul>
+
+<h4>Cleanup Precautions:</h4>
+<ul>
+    <li>Wear heavy gloves, protective clothing, and masks during cleanup.</li>
+    <li>Avoid entering buildings with visible mold or water leaks if you have respiratory conditions.</li>
+    <li>Be cautious of animals, electrocution risks, and contaminated floodwater.</li>
+</ul>
+
+<h4>Generator Safety:</h4>
+<ul>
+    <li>Use generators and gasoline-powered machinery only outdoors and away from windows to prevent carbon monoxide poisoning.</li>
+</ul>
+
+
+    <div class="additional-resources">
+        <h3>Additional Resources</h3>
+
+                <li><a href="http://ndma.gov.in">National Disaster Management Authority (NDMA)</a>: Provides real-time alerts and safety tips.</li>
+                <li><a href="https://ndrf.gov.in/">National Disaster Response Force (NDRF)
+				</a>: The force is trained to respond to natural and man-made disasters, and they are deployed across the country to assist in rescue and relief operations.</li>
+            </ul>
+            <li><strong>Local Emergency Services:</strong> List contact information for local emergency management agencies and shelters.</li>
+            <li><strong>Downloadable Checklists and Guides:</strong></li>
+            <ul>
+                <li><a href="#">Printable Checklists:</a> downloadable and printable checklists for emergency kits and evacuation plans.</li>
+                <li><a href="#">Guides for Specific Needs:</a> Provide guides tailored to specific needs, such as seniors, people with disabilities.</li>
+            </ul>
+        </ul>
+    </div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="video-container">
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/43M5mZuzHF8" frameborder="0" allowfullscreen></iframe>
+			<p>How to prepare for a Flood</p>
+		</div>
+	</div>
+	<div class="row copyright">
+		<div class="col-md-12 text-center">
+			<p>
+				<small class="block">&copy; team ONE MINUS. All Rights Reserved.</small> 
+			</p>
+			<p>
+				<ul class="fh5co-social-icons">
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-dribbble"></i></a></li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

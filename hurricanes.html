@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rescue.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+			width: 100%;
+			overflow-x: hidden;
+        }
+		.popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        /* Popup content container */
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Close button styling */
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Styling for each organization's box */
+        .organization {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        /* Button to open the popup */
+        .open-popup-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+
+        h1, h2 {
+            color: #ad1216; /* Adjust color as needed */
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .additional-resources {
+            margin-top: 30px;
+        }
+
+        .additional-resources ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .additional-resources li {
+            margin-bottom: 5px;
+        }
+
+        .additional-resources a {
+            color: #085291;
+            text-decoration: none;
+        }
+
+        .additional-resources a:hover {
+            text-decoration: underline;
+        }
+		.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: -150px;
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.video p {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+}
+		
+    </style>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html">DISASTER<span>.</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="has-dropdown active" >
+								<a>Disasters</a>
+								<ul class="dropdown">
+									<li><a href="hurricanes.html">Hurricanes</a></li>
+									<li><a href="earthquakes.html">Earthquakes</a></li>
+									<li><a href="floods.html">Floods</a></li>
+									<li><a href="wildfires.html">Wildfires</a></li>
+									<li></li>
+								</ul>
+							</li>
+							<li><a href="safetytips.html">Build a kit</a></li>
+							<li><a href="feed.html">Feed</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="fh5co-heading">
+					<h2 style="font-weight: 800; font-size: 54px; margin-top: -90px;">Hurricanes</h2>
+					<h2>Prepare for Hurricanes</h2>
+					<h3>1. Monitor Weather Updates</h3>
+    <ul>
+        <li><strong>Stay Informed:</strong> Regularly check local news, weather apps, and official sources like the National Weather Service for updates on the hurricane's path and intensity.</li>
+        <li><strong>Use Multiple Sources:</strong> Ensure you have multiple methods to receive alerts, such as a NOAA Weather Radio, mobile apps, and local news channels.</li>
+    </ul>
+
+    <h3>2. Create a Communication Plan</h3>
+    <ul>
+        <li><strong>Family Communication Plan:</strong> Establish a communication plan with your family. Decide on meeting points and designate an out-of-town contact person who can relay information.</li>
+        <li><strong>Emergency Contacts:</strong> Program emergency numbers into your phone and keep a written list in your wallet or emergency kit.</li>
+    </ul>
+
+    <h3>3. Prepare Your Home</h3>
+    <ul>
+        <li><strong>Secure Outdoor Items:</strong> Bring in outdoor furniture, garden tools, and decorations to prevent them from becoming projectiles.</li>
+        <li><strong>Install Storm Shutters:</strong> If possible, install storm shutters or board up windows with plywood to protect against flying debris.</li>
+        <li><strong>Trim Trees and Shrubs:</strong> Trim trees and shrubs to make them more wind-resistant.</li>
+    </ul>
+
+    <h3>4. Check Your Vehicle</h3>
+    <ul>
+        <li><strong>Fuel Up:</strong> Ensure your vehicle's gas tank is full in case you need to evacuate.</li>
+        <li><strong>Emergency Kit:</strong> Keep an emergency kit in your car, including water, non-perishable snacks, a flashlight, and a first aid kit.</li>
+        <li><strong>Check Tires and Battery:</strong> Ensure your tires are inflated, and your battery is in good condition.</li>
+    </ul>
+
+    <h3>5. Prepare Your Family and Pets</h3>
+    <ul>
+        <li><strong>Gather Essential Supplies:</strong> Collect enough food, water, and medications for at least three days. Don’t forget supplies for your pets.</li>
+        <li><strong>Pet Safety:</strong> Ensure pets are microchipped and have collars with ID tags. Prepare a pet emergency kit with food, water, medications, and leashes.</li>
+        <li><strong>Plan for Special Needs:</strong> Consider the needs of elderly family members, young children, or anyone with special needs. Ensure they have necessary supplies and equipment.</li>
+    </ul>
+
+    <h3>6. Financial Preparedness</h3>
+    <ul>
+        <li><strong>Cash on Hand:</strong> Withdraw cash since ATMs and card transactions may not work during power outages.</li>
+        <li><strong>Important Documents:</strong> Gather important documents (e.g., insurance policies, medical records, ID cards) and store them in a waterproof container.</li>
+    </ul>
+
+    <h3>7. Community Engagement</h3>
+    <ul>
+        <li><strong>Know Your Neighbors:</strong> Share plans and resources with neighbors to support each other during and after the storm.</li>
+        <li><strong>Community Resources:</strong> Familiarize yourself with local shelters and community resources in case you need assistance.</li>
+    </ul>
+
+    <h3>8. Practice Your Plan</h3>
+    <ul>
+        <li><strong>Evacuation Drill:</strong> Conduct an evacuation drill with your family to ensure everyone knows what to do and where to go.</li>
+        <li><strong>Emergency Contacts:</strong> Ensure all family members have access to emergency contact numbers and know how to reach them.</li>
+    </ul>
+
+    <div class="additional-resources">
+        <h3>Additional Resources</h3>
+        <ul>
+            <li><strong>Hurricane Preparedness Apps:</strong></li>
+            <ul>
+                <li><a href="http://ndma.gov.in">National Disaster Management Authority (NDMA)</a>: Provides real-time alerts and safety tips.</li>
+                <li><a href="https://ndrf.gov.in/">National Disaster Response Force (NDRF)
+				</a>: The force is trained to respond to natural and man-made disasters, and they are deployed across the country to assist in rescue and relief operations.</li>
+            </ul>
+            <li><strong>Local Emergency Services:</strong> List contact information for local emergency management agencies and shelters.</li>
+            <li><strong>Downloadable Checklists and Guides:</strong></li>
+            <ul>
+                <li><a href="#">Printable Checklists:</a> downloadable and printable checklists for emergency kits and evacuation plans.</li>
+                <li><a href="#">Guides for Specific Needs:</a> Provide guides tailored to specific needs, such as seniors, people with disabilities.</li>
+            </ul>
+        </ul>
+    </div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="video-container">
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/xHRbnuB9F1I" frameborder="0" allowfullscreen></iframe>
+			<p>How to prepare for a Hurricane</p>
+		</div>
+	</div>
+	<div class="row copyright">
+		<div class="col-md-12 text-center">
+			<p>
+				<small class="block">&copy; team ONE MINUS. All Rights Reserved.</small> 
+			</p>
+			<p>
+				<ul class="fh5co-social-icons">
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
+					<li><a href="#"><i class="icon-dribbble"></i></a></li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
